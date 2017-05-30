@@ -38,5 +38,8 @@ module.exports = {
     babel: {
       plugins: ['transform-decorators-legacy', 'transform-class-properties']
     }
-  }
+  },
+  css: [
+    { src: '~assets/style/vars.sass', lang: 'sass' },
+  ]
 }
