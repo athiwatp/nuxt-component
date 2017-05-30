@@ -4,6 +4,20 @@
   </div>
 </template>
 
+<script>
+import Vue from 'vue'
+import Component from 'nuxt-class-component'
+
+@Component({})
+export default class Layout extends Vue {
+  constructor () {
+    super()
+    console.log('default vue')
+  }
+}
+</script>
+
+
 <style>
 html
 {
