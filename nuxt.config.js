@@ -40,6 +40,7 @@ module.exports = {
     }
   },
   css: [
-    { src: '~assets/style/vars.sass', lang: 'sass' },
+    '~assets/main.scss',
+    { src: '~assets/style/vars.sass', lang: 'sass' }
   ]
 }
