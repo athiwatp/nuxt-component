@@ -3102,9 +3102,9 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
-nuxt@latest:
-  version "1.0.0-alpha1"
-  resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-1.0.0-alpha1.tgz#5b935b6a37a87c2233a79f4ced499c31e97311c7"
+nuxt@1.0.0-alpha2:
+  version "1.0.0-alpha2"
+  resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-1.0.0-alpha2.tgz#03366dd8384406b26b1eeff06f7f2b12a6f40c00"
   dependencies:
     ansi-html "^0.0.7"
     autoprefixer "^7.1.0"
@@ -3151,6 +3151,7 @@ nuxt@latest:
     webpack-bundle-analyzer "^2.8.1"
     webpack-dev-middleware "^1.10.2"
     webpack-hot-middleware "^2.18.0"
+    webpack-node-externals "^1.6.0"
 
 oauth-sign@~0.8.1:
   version "0.8.2"
@@ -4685,6 +4686,10 @@ webpack-hot-middleware@^2.18.0:
     html-entities "^1.2.0"
     querystring "^0.2.0"
     strip-ansi "^3.0.0"
+
+webpack-node-externals@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/webpack-node-externals/-/webpack-node-externals-1.6.0.tgz#232c62ec6092b100635a3d29d83c1747128df9bd"
 
 webpack-sources@^0.1.0:
   version "0.1.5"
