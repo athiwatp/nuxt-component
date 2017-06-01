@@ -24,6 +24,14 @@ module.exports = {
     /*
     ** Run ESLINT on save
     */
+    postcss: [
+      require('postcss-nested')(),
+      require('postcss-responsive-type')(),
+      require('postcss-hexrgba')(),
+      require('autoprefixer')({
+        browsers: ['last 3 versions']
+      })
+    ],
     extend (config, ctx) {
       if (ctx.isClient) {
         config.module.rules.push({
@@ -38,6 +46,9 @@ module.exports = {
     babel: {
       plugins: ['transform-decorators-legacy', 'transform-class-properties']
     }
+  },
+  router: {
+    middleware: ['auth']
   },
   css: [
     '~assets/main.scss',

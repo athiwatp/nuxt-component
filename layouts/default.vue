@@ -1,5 +1,6 @@
 <template>
   <div>
+    <logo></logo>
     <nuxt/>
   </div>
 </template>
@@ -51,3 +52,13 @@ html
   background-color: #35495e;
 }
 </style>
+
+<script>
+import Logo from '../components/Logo'
+
+export default {
+  components: {
+    Logo
+  }
+}
+</script>

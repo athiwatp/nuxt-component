@@ -5,10 +5,14 @@
   "author": "Piyush Chauhan <piyushchauhan2011@gmail.com>",
   "private": true,
   "dependencies": {
+    "autoprefixer": "^7.1.1",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "node-sass": "^4.5.3",
     "nuxt": "1.0.0-alpha2",
+    "postcss-hexrgba": "^0.2.1",
+    "postcss-nested": "^2.0.2",
+    "postcss-responsive-type": "^0.5.1",
     "sass-loader": "^6.0.5",
     "vue-class-component": "^5.0.1"
   },
