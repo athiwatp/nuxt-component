@@ -41,11 +41,18 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+      const proxy = {
+        proxy: {
+          '/api': 'http://127.0.0.1:5000'
+        }
+      }
+      config.devServer = Object.create({}, config.devServer, proxy)
       config.resolve.alias['nuxt-class-component'] = '~plugins/nuxt-class-component'
     },
     babel: {
       plugins: ['transform-decorators-legacy', 'transform-class-properties']
-    }
+    },
+    vendor: ['axios', 'd3']
   },
   router: {
     middleware: ['auth']
@@ -53,5 +60,8 @@ module.exports = {
   css: [
     '~assets/main.scss',
     { src: '~assets/style/vars.sass', lang: 'sass' }
+  ],
+  plugins: [
+    { src: '~plugins/d3', ssr: false }
   ]
 }
