@@ -1,6 +1,7 @@
 <template>
   <div>
     <logo></logo>
+    <!--<container><h1>Hey</h1></container>-->
     <nuxt/>
   </div>
 </template>
@@ -55,10 +56,13 @@ html
 
 <script>
 import Logo from '../components/Logo'
+// import {Container} from 'cerebral/vue'
+// import controller from '../cerebral-store'
 
 export default {
   components: {
     Logo
+    // container: Container(controller)
   }
 }
 </script>
